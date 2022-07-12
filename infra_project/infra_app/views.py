@@ -1,5 +1,4 @@
 from django.http import HttpResponse
-from django.shortcuts import render
 
 
 def index(request):
@@ -7,4 +6,4 @@ def index(request):
 
 
 def second_page(request):
-    return render(request, 'HttpResponse.html')
+    return HttpResponse('А это вторая страница')
