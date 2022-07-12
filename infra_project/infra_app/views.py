@@ -8,9 +8,5 @@ def index(request):
 
 def second_page(request):
     if request.method == "POST":
-        username = request.POST.get('username')
-        if username:
-            return HttpResponse(f'hello {username}')
-        else:
-            return HttpResponse('please, enter your username')
+        return HttpResponse('А это вторая страница')
     return render(request, 'second_page.html')
