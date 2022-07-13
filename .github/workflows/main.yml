@@ -53,7 +53,7 @@ jobs:
           uses: docker/build-push-action@v2 
           with:
             push: true
-            tags: yanleon/infra:latest
+            tags: yanleon/infra:v01.001
   deploy:
       runs-on: ubuntu-latest
       needs: build_and_push_to_docker_hub
